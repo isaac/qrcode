@@ -21,7 +21,7 @@ Motion::Project::App.setup do |app|
   # ===========================================================================================
   # 2. Set your app name (this is what will show up under the icon when your app is installed).
   # ===========================================================================================
-  app.name = 'venus-ios'
+  app.name = 'Venus'
 
   # version for your app
   app.version = '1.0'
