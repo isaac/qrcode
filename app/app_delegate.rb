@@ -1,6 +1,6 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    rootViewController = UIViewController.alloc.init
+    rootViewController = RootViewController.alloc.init
     rootViewController.title = 'Venus'
     rootViewController.view.backgroundColor = UIColor.whiteColor
 
