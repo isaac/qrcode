@@ -47,6 +47,8 @@ Motion::Project::App.setup do |app|
   # ===========================================================================================
   # app.frameworks << "StoreKit"
 
+  app.frameworks << "AVFoundation"
+
   # reasonable defaults
   app.device_family = [:ipad]
   app.interface_orientations = [:portrait]
