@@ -48,7 +48,7 @@ Motion::Project::App.setup do |app|
   # app.frameworks << "StoreKit"
 
   # reasonable defaults
-  app.device_family = [:iphone, :ipad]
+  app.device_family = [:ipad]
   app.interface_orientations = [:portrait]
   app.info_plist['UIRequiresFullScreen'] = true
   app.info_plist['ITSAppUsesNonExemptEncryption'] = false
