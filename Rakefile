@@ -41,6 +41,8 @@ Motion::Project::App.setup do |app|
   # ===========================================================================================
   # app.identifier = ''
 
+  app.identifier = "nz.lucid.venus"
+
   # ===========================================================================================
   # 5. If you need to reference any additional iOS libraries, use the config array below.
   #    Default libraries: UIKit, Foundation, CoreGraphics, CoreFoundation, CFNetwork, CoreAudio
@@ -76,6 +78,19 @@ Motion::Project::App.setup do |app|
   #    Download the profile and set the path to the download location below.
   # ===========================================================================================
   # app.provisioning_profile = ''
+
+  app.development do
+    app.codesign_certificate = MotionProvisioning.certificate(
+      type: :development,
+      platform: :ios)
+
+    app.provisioning_profile = MotionProvisioning.profile(
+      bundle_identifier: app.identifier,
+      app_name: app.name,
+      platform: :ios,
+      type: :development)
+  end
+
 
   # ===========================================================================================
   # 8. Similar to Step 7. Production, create a production certificate at:
